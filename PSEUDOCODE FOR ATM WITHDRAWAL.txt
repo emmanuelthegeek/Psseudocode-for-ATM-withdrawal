@@ -1,0 +1,51 @@
+//Delaration of data types
+Declare integer correctPIN;
+Declare integer pin;
+Declare boolean valid;
+
+//PROGRAM FOR ATM WITHDRAWAL
+
+//THE VARIABLE VALID RETURNS BOOLEAN DATA TYPES
+Declare boolean valid;
+
+//PIN MUST BE OF INTEGER DATA TYPE
+Declare integer pin;
+
+//VERIFIED PIN MUST BE OF INTEGER DATA TYPE
+DECLARE integer correctPIN;
+
+//When no card is inserted
+SET valid = false;
+
+BEGIN
+	DISPLAY 'Welcome to ABS Bank: Please insert your card’;
+	IF card inserted
+	DO
+		DISPLAY ‘Enter your PIN’;
+		INPUT pin;
+		READ correctPIN;
+		IF pin = correctPIN
+			valid = true;
+			WHILE TRUE
+   			amount = INPUT "How much would you like to withdraw?"
+   			IF (amount % 1000) != 0 THEN
+      				DISPLAY "Only #1000 notes can be dispensed! please try again"
+   			ELSE
+      				IF amount<1000 OR amount>20000 THEN
+         				DISPLAY "You can only withdraw between #1000 and #20000 at once"
+      				ELSE
+         				1000nairanotes = amount / 1000
+         				DISPLAY "Take your cash: "
+         				DISPLAY "    >> #1000 notes: " + 1000nairanotes
+         				DISPLAY "ABS bank says, 'Thank you for banking with us, we hope to see you soon.'"
+         				DISPLAY "Good Bye Dear Customer."
+				END IF
+			END IF
+      		END IF
+   	END IF
+	IF pin != correctPIN
+		valid = false;
+		WHILE FALSE
+		DISPLAY 'Incorrect PIN’;
+	ENDIF
+END
